@@ -3,6 +3,8 @@ import React, { ReactElement } from "react";
 import { St } from "./style";
 
 export default function Footer() {
+  // 대부분의 변수가 컴포넌트 내부에 있을 필요가 없군요!
+  // 컴포넌트를 읽는 데 방해가 됩니당!!
   const basicInfo = ["이용약관", "개인정보처리방침", "제휴/광고 문의"];
   const basicInfoList = basicInfo.map((info, index) => <St.BasicInfoTitle key={index}>{info}</St.BasicInfoTitle>);
 

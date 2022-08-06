@@ -19,6 +19,8 @@ export default function MyInfo() {
 
   const [isOpened, setIsOpened] = useState<boolean>(false);
 
+  // 페이지 단에서 인가 처리를 해주고 있네요~~
+  // PrivateRoute, withLogin(HOC) 등을 정의해서 Router 컴포넌트에서 한번에 정의해주면 좋을것같아요!
   useEffect(() => {
     if (!isLoading) {
       if (!LOGIN_STATE) navigation("/login");

@@ -1,31 +1,30 @@
 import Slider from "react-slick";
 import styled from "styled-components";
 
-export const St = {
-  Root: styled.section`
-    margin-top: 1.2rem;
-  `,
+export const Root = styled.section`
+  margin-top: 1.2rem;
+`;
 
-  HeaderWrapper: styled.header``,
+export const HeaderWrapper = styled.header``;
 
-  Title: styled.h2``,
+export const Title = styled.h2``;
 
-  Desc: styled.p``,
+export const Desc = styled.p``;
 
-  SliderWrapper: styled.article`
-    touch-action: pan-x;
+export const SliderWrapper = styled.article`
+  touch-action: pan-x;
 
-    width: 100%;
+  width: 100%;
 
-    & .slick-list {
-      height: 15.3rem;
+  & .slick-list {
+    height: 15.3rem;
 
-      padding: 0.4rem 1.6rem;
-    }
+    padding: 0.4rem 1.6rem;
+  }
 
-    & .slick-track {
-      scroll-snap-type: x mandatory;
-    }
-  `,
-  Slider: styled(Slider)``,
-};
+  & .slick-track {
+    scroll-snap-type: x mandatory;
+  }
+`;
+
+export const SliderExtended = styled(Slider)``;
