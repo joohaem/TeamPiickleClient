@@ -19,6 +19,10 @@ export default function CardCollection() {
   const [isOpened, setIsOpened] = useState<boolean>(false);
   const [isLoginOpened, setLoginOpened] = useState<boolean>(false);
 
+  // 공통 모달 로직을 커스텀으로 분리해서 쓰면 편할 것같네요!
+  // const [isOpened, openModal, closeModal] = useModal();
+  // 과 같이 선언적으로 쓸 수 있을 것 같아요!
+
   const openModal = () => {
     setIsOpened(true);
   };

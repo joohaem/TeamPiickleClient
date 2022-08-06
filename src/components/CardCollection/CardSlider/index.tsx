@@ -33,6 +33,8 @@ export default function CardSlider(props: CardSliderProps) {
   const sliderRef = useRef<Slider | null>(null);
 
   useEffect(() => {
+    // SWR을 거치지 않아서, 데이터를 지역 상태로 보관하고 있다는 점, onSuccess 후처리 로직을 수행하고 있다는 점에서
+    // SWR을 활용했다면 더욱 깔끔하지 않았을까 생각합니다!
     fetchCardCollection(cardsTypeLoaction, (data: CardList[]) => {
       setCardLists(data);
     });

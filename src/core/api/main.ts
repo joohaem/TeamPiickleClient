@@ -23,6 +23,7 @@ export function useBestPiickle() {
   return {
     bestPiickle: data?.data,
     isLoading: !error && !data,
+    // isError는 이름에 따라 boolean이 와야할 것 같은데, error 객체가 들어와서 헷갈릴 여지가 있겠습니다.
     isError: error,
   };
 }

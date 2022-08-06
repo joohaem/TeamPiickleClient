@@ -14,6 +14,7 @@ export default function MySetting() {
     }
   };
 
+  // 이것두 컴포넌트 안에 두어서 매번 렌더링 시킬 필요가 있을까요?~
   const mySetting = ["공지사항", "문의", "팀 정보", "로그아웃", "회원 탈퇴"];
   const mySettingList = mySetting.map((setting, index) => (
     <St.MySettingList key={index}>

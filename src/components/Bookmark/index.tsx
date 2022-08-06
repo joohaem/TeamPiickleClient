@@ -27,7 +27,11 @@ export default function Bookmark() {
       <St.List>
         {userBookmarks &&
           userBookmarks.data.map((myPiickle: myPiickle, idx: number) => (
-            <MyPiickleItem key={myPiickle.cardId} myPiickle={myPiickle} idx={idx} />
+            // 위 아래 차이점을 아시나요? 렌더링 관점에서 무엇이 더 유리할까요?
+            // 힌트 : myPiickle은 객체이다.
+
+            // <MyPiickleItem key={myPiickle.cardId} myPiickle={myPiickle} idx={idx} />
+            <MyPiickleItem key={myPiickle.cardId} {...myPiickle} idx={idx} />
           ))}
       </St.List>
       <Footer />
